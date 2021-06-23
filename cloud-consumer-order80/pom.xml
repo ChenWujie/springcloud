@@ -17,6 +17,10 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency><!-- 引入自定义的通用包，使用entities -->
             <groupId>com.cwj.springcloud</groupId>
             <artifactId>cloud-api-commons</artifactId>
