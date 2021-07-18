@@ -18,6 +18,7 @@
 
     <dependencies>
         <dependency>
+<!--            集成了ribbon-->
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>

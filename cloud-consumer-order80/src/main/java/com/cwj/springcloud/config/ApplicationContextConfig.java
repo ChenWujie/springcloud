@@ -9,7 +9,8 @@ import org.springframework.web.client.RestTemplate;
 public class ApplicationContextConfig {
 
     @Bean
-    @LoadBalanced //开启RestTemplate负载均衡，能通过服务名称找到服务提供者，不加此注解，通过http://CLOUD-PAYMENT-SERVICE访问会报错
+//    @LoadBalanced //开启RestTemplate负载均衡，能通过服务名称找到服务提供者，不加此注解，通过http://CLOUD-PAYMENT-SERVICE访问会报错
+    //手写轮询算法时，取消@LoadBalanced注解
     public RestTemplate getRestTemplate() {
         return new RestTemplate();
     }
