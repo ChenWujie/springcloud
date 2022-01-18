@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RefreshScope  //实现手动刷新配置，向3355端口发送Post请求后即可刷新：curl -X POST "http://localhost:3355/actuator/refresh"
+@RefreshScope
 public class ConfigClientController {
     @Value("${server.port}")
     private String serverPort;
